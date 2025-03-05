@@ -8,8 +8,9 @@
     <link rel="icon" type="image/png" href="icon.png">
     <style>
         body {
-            background-color: #444444; /* Pastel gray background color */
-            font-family: Arial, sans-serif;
+            background-color: #22272e; /* Pastel gray background color */
+            font-family: 'Courier New', Courier, monospace;
+            color:white;
         }
         .container {
             text-align: center;
@@ -19,11 +20,11 @@
             width: 1200px;
             height: 738px;
         }
-        .giscus {
-            font-family:'Inter';
+        .commentsheader {
+            font-family: 'Lucida Console', Monaco, monospace;
+            color: white;
         }
     </style>
-<script type="module" src="https://esm.sh/giscus"></script>
 </head>
 <body>
     <div class="container">
@@ -31,23 +32,26 @@
             <iframe frameborder="0" src="https://html-classic.itch.zone/html/12949223/Ping web/index.html" width="1200" height="738"><a href="https://xmada7331.itch.io/ping">PING by xmada7331</a></iframe>
         </div>
     </div>
-    <div class="giscus">
+    <div class="commentsheader">
         <h1> Comment your experiences and suggestions for the future!</h1>
-        <giscus-widget
-        id="comments"
-        repo="xmada7331/pingwebsite"
-        repoId="R_kgDOOCmtCQ="
-        category="Announcements"
-        categoryId="DIC_kwDOOCmtCc4Cni4w"
-        mapping="pathname"
-        term="Welcome to @giscus/react component!"
-        reactionsEnabled="1"
-        emitMetadata="0"
-        inputPosition="bottom"
-        theme="preferred_color_scheme"
-        lang="en"
-        loading="lazy"
-        ></giscus-widget>
+
+    </div>
+    <div class="giscus">
+        <script src="https://giscus.app/client.js"
+        data-repo="xmada7331/pingwebsite"
+        data-repo-id="R_kgDOOCmtCQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOOCmtCc4Cni4w"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 
     </div>
 </body>
