@@ -52,33 +52,45 @@
             padding-left: 70px;
             padding-right: 70px;
         }
+        .icon.github_icon:hover p,
+        .icon.steam_icon:hover p {
+            visibility: hidden;
+        }
+        .icon.github_icon:hover p::before,
+        .icon.steam_icon:hover p::before {
+            content: 'coming soon';
+            visibility: visible;
+            color: red;
+            display: flex;
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="icon">
-            <a href="https://xmada7331.itch.io/ping/devlog/896215/ping-020" target="_blank">
+            <a href="https://xmada7331.itch.io/ping#download" target="_blank">
                 <img src="download_icon.png" alt="Download">
                 <p>Download</p>
             </a>
         </div>
-        <div class="icon">
-            <a href="https://github.com/xmada7331/pingwebsite" target="_blank">
+        <div class="icon github_icon">
+            <a href="#">
                 <img src="github_icon.png" alt="GitHub">
                 <p>GitHub</p>
             </a>
         </div>
         <h1 id="ping">Ping</h1>
-        <div class="icon">
+        <div class="icon itchio_icon">
             <a href="https://xmada7331.itch.io/ping" target="_blank">
                 <img src="itchio_icon.png" alt="Itch.io">
                 <p>Itch.io</p>
             </a>
         </div>
-        <div class="icon">
+        <div class="icon steam_icon">
             <a href="#">
-                <img src="steam_icon.png" alt="Steam.com" target="_blank">
-                <p>Coming soon</p>
+                <img src="steam_icon.png" alt="Steam.com">
+                <p>Steam</p>
             </a>
         </div>
     </div>
