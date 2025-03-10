@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>Ping</title>
+    <style>
+        body {
+            background-color: #141b2c;
+            color: white;
+            text-align: center;
+            font-family: 'Lucida Console', Monaco, monospace;
+            margin-top: -50px;
+        }
+
+        h1 {
+            font-size: 90px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-family: 'Lucida Console', Monaco, monospace;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            /* Adjust the gap between icons and text as needed */
+            padding-top: 10px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 16px;
+            padding: 10px;
+            transition: transform .2s;
+        }
+
+        .icon p {
+            transition: transform .2s;
+            width: 100px;
+        }
+
+        .icon.download_icon:hover {
+            transform: scale(1.2);
+        }
+
+        .icon.github_icon:hover {
+            transform: scale(1.2);
+        }
+
+        .icon.itchio_icon:hover {
+            transform: scale(1.2);
+        }
+
+        .icon.steam_icon:hover {
+            transform: scale(1.2);
+        }
+
+        .icon.github_icon:hover p {
+            color: red;
+            transform: scale(1.2);
+        }
+
+        .icon.steam_icon:hover p {
+            color: red;
+            transform: scale(1.2);
+        }
+
+        .icon img {
+            margin-top: 25px;
+            width: 50px;
+            height: 50px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .commentsheader h1 {
+            font-size: 30px;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        #ping {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+
+        .giscus {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .float-left {
+            padding-top: 5%;
+            position: relative;
+            float: left;
+            margin: 0px 0px 50px 20px;
+            width: 350px;
+            height: 100px;
+            font-size: 30px;
+            text-align: left;
+            line-height: 43px;
+            letter-spacing: -1.5px;
+
+        }
+
+        .float-right {
+            float: center;
+            width: 65%;
+            margin-right: 15%;
+        }
+
+        .commentsheader {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 10vw;
+                /* Increase font size for smaller screens */
+            }
+
+            .icon {
+                font-size: 2vw;
+                /* Increase icon size for smaller screens */
+                padding-bottom: 2vw;
+            }
+
+            .icon img {
+                width: 5vw;
+                /* Increase icon size for smaller screens */
+                height: 5vw;
+                /* Increase icon size for smaller screens */
+            }
+
+            .container {
+                margin-top: 50px;
+                /* Adjust margin for smaller screens */
+            }
+
+            #ping {
+                padding-left: 10px;
+                /* Adjust padding for smaller screens */
+                padding-right: 10px;
+                /* Adjust padding for smaller screens */
+            }
+
+            .commentsheader h1 {
+                font-size: 6vw;
+                /* Adjust font size for smaller screens */
+            }
+
+            iframe {
+                height: 100vw;
+                /* Adjust height for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span class="icon download_icon">
+            <a href="https://xmada7331.itch.io/ping#download" target="_blank">
+                <img src="download_icon.png" alt="Download">
+                <p class="download_text">Download</p>
+            </a>
+        </span>
+        <span class="icon github_icon">
+            <a href="#">
+                <img src="github_icon.png" alt="GitHub">
+                <p class="github_text">GitHub</p>
+            </a>
+        </span>
+        <h1 id="ping">Ping</h1>
+        <span class="icon itchio_icon">
+            <a href="https://xmada7331.itch.io/ping" target="_blank">
+                <img src="itchio_icon.png" alt="Itch.io">
+                <p class="itchio_text">Itch.io</p>
+            </a>
+        </span>
+        <span class="icon steam_icon">
+            <a href="#">
+                <img src="steam_icon.png" alt="Steam.com">
+                <p class="steam_text">Steam</p>
+            </a>
+        </span>
+    </div>
+
+    <div class="container">
+
+        <iframe class="float-right" frameborder="0" src="Ping web/index.html" width="1200" height="738" allowfullscreen></iframe>
+
+        <p class="float-left">
+            <b>W</b>- up <br>
+            <b>S</b>- down <br>
+            <b>E</b>- select <br>
+            <b>A/D-</b> horizontal move<br>
+            <b>A</b>- skip upgrade <br>
+            <b>ESC</b>- pasuse <br>
+            <b>1</b>- select top upgrade <br>
+            <b>2</b>- select bottom upgrade <br>
+            <br>
+            <b>F</b>- skip enemy/ reroll shop<br>
+            <b>G</b>- add $100 <br>
+        </p>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="commentsheader">
+        <h1> Comment your experiences and suggestions for the future!</h1>
+    </div>
+    <div class="giscus">
+        <script src="https://giscus.app/client.js" data-repo="xmada7331/pingwebsite" data-repo-id="R_kgDOOCmtCQ"
+            data-category="Announcements" data-category-id="DIC_kwDOOCmtCc4Cni4w" data-mapping="pathname"
+            data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+            data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
+            </script>
+    </div>
+    <script>
+        document.querySelector('.github_icon').addEventListener('mouseover', function () {
+            document.querySelector('.github_text').textContent = 'coming soon';
+        });
+
+        document.querySelector('.github_icon').addEventListener('mouseout', function () {
+            document.querySelector('.github_text').textContent = 'GitHub';
+        });
+
+        document.querySelector('.steam_icon').addEventListener('mouseover', function () {
+            document.querySelector('.steam_text').textContent = 'coming soon';
+        });
+
+        document.querySelector('.steam_icon').addEventListener('mouseout', function () {
+            document.querySelector('.steam_text').textContent = 'Steam';
+        });
+    </script>
+</body>
+
+</html>
