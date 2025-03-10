@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,30 @@
     <title>Ping</title>
     <style>
         body {
-            background-color: #0E1A36;
+            background-color: #141b2c;
             color: white;
             text-align: center;
             font-family: 'Lucida Console', Monaco, monospace;
             margin-top: -50px;
         }
+
         h1 {
             font-size: 90px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 5px;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Lucida Console', Monaco, monospace;
         }
+
         .header {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* Adjust the gap between icons and text as needed */
+            gap: 20px;
+            /* Adjust the gap between icons and text as needed */
             padding-top: 10px;
         }
+
         .icon {
             display: flex;
             flex-direction: column;
@@ -34,29 +39,34 @@
             font-size: 16px;
             padding: 10px;
         }
+
         .icon img {
             margin-top: 25px;
             width: 50px;
             height: 50px;
         }
+
         a {
             color: white;
             text-decoration: none;
         }
+
         .commentsheader h1 {
             font-size: 30px;
+            width: 100%;
+            margin-top: 50px;
         }
-        .container {
 
-        }
         #ping {
             padding-left: 70px;
             padding-right: 70px;
         }
+
         .icon.github_icon:hover p,
         .icon.steam_icon:hover p {
             visibility: hidden;
         }
+
         .icon.github_icon:hover p::before,
         .icon.steam_icon:hover p::before {
             content: 'coming soon';
@@ -65,44 +75,81 @@
             display: flex;
             font-size: 16px;
         }
+
         .giscus {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .float-left {
+            padding-top: 5%;
+            position: relative;
+            float: left;
+            margin: 0px 0px 50px 20px;
+            width: 350px;
+            height: 100px;
+            font-size: 30px;
+            text-align: left;
+            
+        }
+        .float-right {
+            float: center;
+            width: 65%;
+            margin-right: 15%;
+        }
+        .commentsheader {
             width:100%;
             margin-top: 50px;
         }
-        iframe {
-            width: 100%;
-            height: 590px;
+        .clear {
+            clear: both;
         }
+
+
         @media (max-width: 600px) {
             h1 {
-                font-size: 10vw; /* Increase font size for smaller screens */
+                font-size: 10vw;
+                /* Increase font size for smaller screens */
             }
+
             .icon {
-                font-size: 2vw; /* Increase icon size for smaller screens */
+                font-size: 2vw;
+                /* Increase icon size for smaller screens */
                 padding-bottom: 2vw;
             }
+
             .icon img {
-                width: 5vw; /* Increase icon size for smaller screens */
-                height: 5vw; /* Increase icon size for smaller screens */
+                width: 5vw;
+                /* Increase icon size for smaller screens */
+                height: 5vw;
+                /* Increase icon size for smaller screens */
             }
+
             .container {
-                margin-top: 50px; /* Adjust margin for smaller screens */
+                margin-top: 50px;
+                /* Adjust margin for smaller screens */
             }
+
             #ping {
-                padding-left: 10px; /* Adjust padding for smaller screens */
-                padding-right: 10px; /* Adjust padding for smaller screens */
+                padding-left: 10px;
+                /* Adjust padding for smaller screens */
+                padding-right: 10px;
+                /* Adjust padding for smaller screens */
             }
+
             .commentsheader h1 {
-                font-size: 6vw; /* Adjust font size for smaller screens */
+                font-size: 6vw;
+                /* Adjust font size for smaller screens */
             }
+
             iframe {
-                height: 100vw; /* Adjust height for smaller screens */
-                
+                height: 100vw;
+                /* Adjust height for smaller screens */
             }
         }
-        
     </style>
 </head>
+
 <body>
     <div class="header">
         <div class="icon download_icon">
@@ -131,30 +178,40 @@
             </a>
         </div>
     </div>
+
     <div class="container">
-        <div class="content">
-            <iframe frameborder="0" src="https://html-classic.itch.zone/html/12949223/Ping web/index.html" width="1200" height="738"><a href="https://xmada7331.itch.io/ping">PING by xmada7331</a></iframe>
-        </div>
+
+        <iframe class="float-right" frameborder="0"
+            src="https://html-classic.itch.zone/html/12949223/Ping web/index.html" width="1200" height="738"><a
+                href="https://xmada7331.itch.io/ping" allowfullscreen>PING by xmada7331</a></iframe>
+
+        <p class="float-left">
+            <b>W</b>- up <br>
+            <b>S</b>- down <br>
+            <b>E</b>- select <br>
+            <b>A/D</b> for horizontal<br>
+            <b>A</b>- skip upgrade <br>
+            <b>ESC</b>- pasuse <br>
+            <b>1</b>- select top upgrade <br>
+            <b>2</b>- select bottom upgrade <br>
+            <br><br><br>
+            <b>F</b>- skip enemy/ reroll shop<br>
+            <b>G</b>- add $100 <br>
+        </p>
+
+        <div class="clear"></div>
     </div>
+
     <div class="commentsheader">
         <h1> Comment your experiences and suggestions for the future!</h1>
     </div>
     <div class="giscus">
-        <script src="https://giscus.app/client.js"
-        data-repo="xmada7331/pingwebsite"
-        data-repo-id="R_kgDOOCmtCQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOOCmtCc4Cni4w"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-        </script>
+        <script src="https://giscus.app/client.js" data-repo="xmada7331/pingwebsite" data-repo-id="R_kgDOOCmtCQ"
+            data-category="Announcements" data-category-id="DIC_kwDOOCmtCc4Cni4w" data-mapping="pathname"
+            data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+            data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
+            </script>
     </div>
 </body>
+
 </html>
