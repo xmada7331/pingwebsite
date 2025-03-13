@@ -86,7 +86,7 @@
             transform: scale(1.2);
         }
 
-        .icon.steam_icon:hover {
+        .icon.x_icon:hover {
             transform: scale(1.2);
         }
 
@@ -96,8 +96,7 @@
             font-size:15px;
         }
 
-        .icon.steam_icon:hover p {
-            color: red;
+        .icon.x_icon:hover p {
             transform: scale(1.2);
             font-size:15px;
         }
@@ -238,10 +237,10 @@
                 <p class="itchio_text">Itch.io</p>
             </a>
         </span>
-        <span class="icon steam_icon">
-            <a href="#">
-                <img src="steam_icon.png" alt="Steam.com">
-                <p class="steam_text">Steam</p>
+        <span class="icon x_icon">
+            <a href="https://x.com/pingthegame" target="_blank">
+                <img src="x_icon.png" alt="twitter.com">
+                <p class="x_text">X</p>
             </a>
         </span>
     </div>
@@ -275,13 +274,13 @@
             document.querySelector('.github_text').textContent = 'GitHub';
         });
 
-        document.querySelector('.steam_icon').addEventListener('mouseover', function () {
-            document.querySelector('.steam_text').textContent = 'coming soon';
+       /* document.querySelector('.x_icon').addEventListener('mouseover', function () {
+            document.querySelector('.x_text').textContent = 'coming soon';
         });
 
-        document.querySelector('.steam_icon').addEventListener('mouseout', function () {
-            document.querySelector('.steam_text').textContent = 'Steam';
-        });
+        document.querySelector('.x_icon').addEventListener('mouseout', function () {
+            document.querySelector('.x_text').textContent = 'X';
+        });*/
     </script>
 </body>
 
